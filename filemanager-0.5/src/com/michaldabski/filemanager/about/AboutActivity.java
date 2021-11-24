@@ -34,6 +34,7 @@ import android.view.View.OnClickListener;
 import android.widget.TextView;
 
 import com.michaldabski.filemanager.R;
+import com.michaldabski.filemanager.feedback;
 import com.michaldabski.utils.FontApplicator;
 
 public class AboutActivity extends Activity implements OnClickListener
@@ -105,10 +106,12 @@ public class AboutActivity extends Activity implements OnClickListener
 			case R.id.btnFeedback:
 				try
 				{
-					Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
-					emailIntent.setData(Uri.parse("mailto:"+FEEDBACK_ADDRESS));
-					emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name)+" feedback");
-					startActivity(emailIntent);
+					Intent sendFeedbackIntent = new Intent(getApplicationContext(), feedback.class);
+					startActivity(sendFeedbackIntent);
+//					Intent emailIntent = new Intent(Intent.ACTION_SENDTO);
+//					emailIntent.setData(Uri.parse("mailto:"+FEEDBACK_ADDRESS));
+//					emailIntent.putExtra(Intent.EXTRA_SUBJECT, getString(R.string.app_name)+" feedback");
+//					startActivity(emailIntent);
 				}
 				catch (Exception e)
 				{

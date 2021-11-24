@@ -79,5 +79,7 @@
     <string name="mime_type_s">MIME Type: %s</string>
     <string name="comment">comment</string>
     <string name="name">Name</string>
+    <string name="edit_feedback">Enter your feedback</string>
+    <string name="button_sendfeedback">Send Feedback</string>
 
 </resources>
