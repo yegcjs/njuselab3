@@ -77,5 +77,7 @@
     <string name="feedback">Feedback</string>
     <string name="file_info">File info</string>
     <string name="mime_type_s">MIME Type: %s</string>
+    <string name="comment">comment</string>
+    <string name="name">Name</string>
 
 </resources>
